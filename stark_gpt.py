@@ -4,13 +4,15 @@ import pygame
 import gtts
 from api_secret import API_KEY
 
-
+### Api keyinizi "api_secret.py" dosyasından çeker
 openai.api_key = API_KEY
 pygame.mixer.init()
 
 r = sr.Recognizer()
 mic = sr.Microphone(device_index=1)
 print(sr.Microphone.list_microphone_names())
+
+
 
 conversation = ""
 user_name = "Sahip"
