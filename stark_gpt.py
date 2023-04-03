@@ -8,6 +8,7 @@ from api_secret import API_KEY
 openai.api_key = API_KEY
 pygame.mixer.init()
 
+## device_index = 1 yazan yere kend icihaz numaranızı girin
 r = sr.Recognizer()
 mic = sr.Microphone(device_index=1)
 print(sr.Microphone.list_microphone_names())
